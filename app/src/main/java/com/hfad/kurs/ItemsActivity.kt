@@ -19,12 +19,12 @@ class ItemsActivity : AppCompatActivity() {
             insets
         }
 
+
         val itemsList: RecyclerView = findViewById(R.id.itemsList)
         val items = arrayListOf<Item>()
-
-        items.add(Item(1, "sofa", "Диван", "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Sed do eiusmod tempor incididunt ut laboris nist ut aliguip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor prodient, sunt in culpa aui officia deserunt mollit anim id est laborum.", 999))
-        items.add(Item(2, "light", "Свет", "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Sed do eiusmod tempor incididunt ut laboris nist ut aliguip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor prodient, sunt in culpa aui officia deserunt mollit anim id est laborum.", 399))
-        items.add(Item(3, "kitchen", "Кухня", "Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Sed do eiusmod tempor incididunt ut laboris nist ut aliguip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor prodient, sunt in culpa aui officia deserunt mollit anim id est laborum.", 2999))
+        items.add(Item(1, "sofa", "Диван", "Крутой диван", "На нем можно посидеть и поспать", 999))
+        items.add(Item(2, "light", "Свет", "Люстра", "Предназначена для того чтобы освещать помещение", 399))
+        items.add(Item(3, "kitchen", "Кухня", "Кухонный гарнитур", "Современный кухонный гарнитур из натурального дерева", 2999))
 
         itemsList.layoutManager = LinearLayoutManager(this)
         itemsList.adapter = ItemsAdapter(items, this)

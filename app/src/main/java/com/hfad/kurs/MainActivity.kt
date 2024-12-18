@@ -22,6 +22,33 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        val image = "sofa"
+        val title = "Диван"
+        val desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        val text = "Sed do eiusmod tempor incididunt ut laboris nist ut aliguip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor prodient, sunt in culpa aui officia deserunt mollit anim id est laborum."
+        val price = 999
+        val product1 = Product(image, title, desc, text, price)
+        val db = DbHelper(this, null)
+        db.addProducts(product1)
+
+        val image2 = "light"
+        val title2 = "Свет"
+        val desc2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        val text2 = "Sed do eiusmod tempor incididunt ut laboris nist ut aliguip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor prodient, sunt in culpa aui officia deserunt mollit anim id est laborum."
+        val price2 = 399
+        val product2 = Product(image2, title2, desc2, text2, price2)
+        val db2 = DbHelper(this, null)
+        db2.addProducts(product2)
+
+        val image3 = "kitchen"
+        val title3 = "Кухня"
+        val desc3 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        val text3 = "Sed do eiusmod tempor incididunt ut laboris nist ut aliguip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor prodient, sunt in culpa aui officia deserunt mollit anim id est laborum."
+        val price3 = 2999
+        val product3 = Product(image3, title3, desc3, text3, price3)
+        val db3 = DbHelper(this, null)
+        db3.addProducts(product3)
+
         val userLogin: EditText = findViewById(R.id.user_login)
         val userEmail: EditText = findViewById(R.id.user_email)
         val userPass: EditText = findViewById(R.id.user_pass)

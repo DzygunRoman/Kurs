@@ -21,9 +21,9 @@ class ItemActivity : AppCompatActivity() {
             insets
         }
 
-        Checkout.preload(applicationContext)
-        val co = Checkout()
-        co.setKeyID("rzp_test_EgmQoGwAt33eJi")
+       // Checkout.preload(applicationContext)
+      //  val co = Checkout()
+      //  co.setKeyID("rzp_test_EgmQoGwAt33eJi")
 
         val title: TextView = findViewById(R.id.item_list_title_one)
         val text: TextView = findViewById(R.id.item_list_text)
